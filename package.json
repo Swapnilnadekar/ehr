@@ -1,8 +1,11 @@
 {
   "name": "@ehr/source",
+  "homepage": "https://Swapnilnadekar.github.io/ehr",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "hg-pages -d build",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
@@ -56,6 +59,7 @@
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^6.1.1",
     "jsdom": "~22.1.0",
     "nx": "18.1.1",
     "prettier": "^2.6.2",
